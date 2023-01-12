@@ -44,7 +44,7 @@ CREATE TABLE `bo_kpi_comments` (
   PRIMARY KEY (`id`),
   KEY `usuarioId` (`usuarioId`),
   CONSTRAINT `bo_kpi_comments_ibfk_1` FOREIGN KEY (`usuarioId`) REFERENCES `users` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=114 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
 
 CREATE TABLE `bo_kpi_store_cebececo` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
@@ -67,7 +67,7 @@ CREATE TABLE `bo_kpi_store_cebececo` (
   PRIMARY KEY (`id`),
   KEY `usuarioId` (`usuarioId`),
   CONSTRAINT `bo_kpi_store_cebececo_ibfk_1` FOREIGN KEY (`usuarioId`) REFERENCES `users` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=117 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
 
 CREATE TABLE `bo_kpi_general` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
@@ -83,7 +83,7 @@ CREATE TABLE `bo_kpi_general` (
   UNIQUE KEY `codeGeneral_UNIQUE` (`codeGeneral`),
   KEY `usuarioId` (`usuarioId`),
   CONSTRAINT `bo_kpi_general_ibfk_1` FOREIGN KEY (`usuarioId`) REFERENCES `users` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
 
 
 CREATE TABLE `bo_kpi_secundaria` (
@@ -103,7 +103,7 @@ CREATE TABLE `bo_kpi_secundaria` (
   KEY `codeGeneral` (`codeGeneral`),
   CONSTRAINT `bo_kpi_secundaria_ibfk_1` FOREIGN KEY (`usuarioId`) REFERENCES `users` (`id`),
   CONSTRAINT `bo_kpi_secundaria_ibfk_2` FOREIGN KEY (`codeGeneral`) REFERENCES `bo_kpi_general` (`codeGeneral`) ON DELETE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
 
 
 CREATE TABLE `bo_kpi_especifica` (
@@ -126,7 +126,7 @@ CREATE TABLE `bo_kpi_especifica` (
   CONSTRAINT `bo_kpi_especifica_ibfk_1` FOREIGN KEY (`usuarioId`) REFERENCES `users` (`id`),
   CONSTRAINT `bo_kpi_especifica_ibfk_2` FOREIGN KEY (`codeGeneral`) REFERENCES `bo_kpi_secundaria` (`codeGeneral`) ON DELETE NO ACTION,
   CONSTRAINT `bo_kpi_especifica_ibfk_3` FOREIGN KEY (`codeSecundaria`) REFERENCES `bo_kpi_secundaria` (`codeSecundaria`) ON DELETE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
 
 
 CREATE TABLE `bo_kpi_naturaleza` (
