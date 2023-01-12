@@ -1,20 +1,5 @@
 
 
-CREATE TABLE `usuariopermiso` (
-  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-  `codigo` varchar(5) NOT NULL,
-  `valor` varchar(5) NOT NULL,
-  `usuarioId` bigint(20) unsigned NOT NULL,
-  `codigopermisoId` bigint(20) unsigned NOT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`),
-  KEY `codigopermisoId` (`codigopermisoId`),
-  KEY `usuarioId` (`usuarioId`),
-  CONSTRAINT `usuariopermiso_ibfk_1` FOREIGN KEY (`codigopermisoId`) REFERENCES `codigopermiso` (`id`),
-  CONSTRAINT `usuariopermiso_ibfk_2` FOREIGN KEY (`usuarioId`) REFERENCES `users` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
 CREATE TABLE `codigopermiso` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `descripcion` text,
@@ -30,7 +15,20 @@ CREATE TABLE `codigopermiso` (
   CONSTRAINT `codigopermiso_ibfk_1` FOREIGN KEY (`usuarioId`) REFERENCES `users` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-
+CREATE TABLE `usuariopermiso` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `codigo` varchar(5) NOT NULL,
+  `valor` varchar(5) NOT NULL,
+  `usuarioId` bigint(20) unsigned NOT NULL,
+  `codigopermisoId` bigint(20) unsigned NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `codigopermisoId` (`codigopermisoId`),
+  KEY `usuarioId` (`usuarioId`),
+  CONSTRAINT `usuariopermiso_ibfk_1` FOREIGN KEY (`codigopermisoId`) REFERENCES `codigopermiso` (`id`),
+  CONSTRAINT `usuariopermiso_ibfk_2` FOREIGN KEY (`usuarioId`) REFERENCES `users` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `bo_kpi_comments` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
