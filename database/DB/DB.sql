@@ -15,6 +15,7 @@ CREATE TABLE `codigopermiso` (
   CONSTRAINT `codigopermiso_ibfk_1` FOREIGN KEY (`usuarioId`) REFERENCES `users` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+
 CREATE TABLE `usuariopermiso` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `codigo` varchar(5) NOT NULL,
@@ -29,6 +30,7 @@ CREATE TABLE `usuariopermiso` (
   CONSTRAINT `usuariopermiso_ibfk_1` FOREIGN KEY (`codigopermisoId`) REFERENCES `codigopermiso` (`id`),
   CONSTRAINT `usuariopermiso_ibfk_2` FOREIGN KEY (`usuarioId`) REFERENCES `users` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 CREATE TABLE `bo_kpi_comments` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
@@ -45,6 +47,7 @@ CREATE TABLE `bo_kpi_comments` (
   KEY `usuarioId` (`usuarioId`),
   CONSTRAINT `bo_kpi_comments_ibfk_1` FOREIGN KEY (`usuarioId`) REFERENCES `users` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
+
 
 CREATE TABLE `bo_kpi_store_cebececo` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
@@ -68,6 +71,7 @@ CREATE TABLE `bo_kpi_store_cebececo` (
   KEY `usuarioId` (`usuarioId`),
   CONSTRAINT `bo_kpi_store_cebececo_ibfk_1` FOREIGN KEY (`usuarioId`) REFERENCES `users` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
+
 
 CREATE TABLE `bo_kpi_general` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
@@ -155,7 +159,6 @@ CREATE TABLE `bo_kpi_naturaleza` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
-
 CREATE TABLE `bo_kpi_cuenta` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `cuenta` varchar(10) DEFAULT NULL,
@@ -182,3 +185,5 @@ CREATE TABLE `bo_kpi_cuenta` (
   CONSTRAINT `bo_kpi_cuenta_ibfk_4` FOREIGN KEY (`codeEspecifica`) REFERENCES `bo_kpi_especifica` (`codeEspecifica`) ON DELETE NO ACTION,
   CONSTRAINT `bo_kpi_cuenta_ibfk_5` FOREIGN KEY (`codeNaturaleza`) REFERENCES `bo_kpi_naturaleza` (`codeNaturaleza`) ON DELETE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
