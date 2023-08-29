@@ -325,8 +325,8 @@ class ComposerStaticInit6cc1a5f084becc32212db09cc4482984
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -5327,6 +5327,7 @@ class ComposerStaticInit6cc1a5f084becc32212db09cc4482984
         'Ramsey\\Uuid\\Rfc4122\\UuidV8' => __DIR__ . '/..' . '/ramsey/uuid/src/Rfc4122/UuidV8.php',
         'Ramsey\\Uuid\\Rfc4122\\Validator' => __DIR__ . '/..' . '/ramsey/uuid/src/Rfc4122/Validator.php',
         'Ramsey\\Uuid\\Rfc4122\\VariantTrait' => __DIR__ . '/..' . '/ramsey/uuid/src/Rfc4122/VariantTrait.php',
+        'Ramsey\\Uuid\\Rfc4122\\Version' => __DIR__ . '/..' . '/ramsey/uuid/src/Rfc4122/Version.php',
         'Ramsey\\Uuid\\Rfc4122\\VersionTrait' => __DIR__ . '/..' . '/ramsey/uuid/src/Rfc4122/VersionTrait.php',
         'Ramsey\\Uuid\\TimeBasedUuidFactoryInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/TimeBasedUuidFactoryInterface.php',
         'Ramsey\\Uuid\\TimeBasedUuidInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/TimeBasedUuidInterface.php',
@@ -5342,6 +5343,7 @@ class ComposerStaticInit6cc1a5f084becc32212db09cc4482984
         'Ramsey\\Uuid\\UuidInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidInterface.php',
         'Ramsey\\Uuid\\Validator\\GenericValidator' => __DIR__ . '/..' . '/ramsey/uuid/src/Validator/GenericValidator.php',
         'Ramsey\\Uuid\\Validator\\ValidatorInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/Validator/ValidatorInterface.php',
+        'Ramsey\\Uuid\\Variant' => __DIR__ . '/..' . '/ramsey/uuid/src/Variant.php',
         'SebastianBergmann\\CliParser\\AmbiguousOptionException' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/AmbiguousOptionException.php',
         'SebastianBergmann\\CliParser\\Exception' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/Exception.php',
         'SebastianBergmann\\CliParser\\OptionDoesNotAllowArgumentException' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/OptionDoesNotAllowArgumentException.php',

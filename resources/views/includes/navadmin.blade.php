@@ -22,63 +22,66 @@
         <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
                 <svg class="nav-icon">
                         <use xlink:href="{{ asset('../vendors/@coreui/icons/svg/free.svg#cil-industry') }}"></use>
-                </svg> Store Cebececo</a>
+                </svg>  Vehiculos a Motor</a>
                 <ul class="nav-group-items">
-                        <li class="nav-item"><a class="nav-link" href="/dist/storecebececo"><span class="nav-icon"></span> Store Cebececo</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/dist/storecebececo/importar"><span class="nav-icon"></span> Importar Store Cebececo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/dist/storecebececo"><span class="nav-icon"></span> Vehiculos a Motor</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/dist/storecebececo/importar"><span class="nav-icon"></span> Importar Datos</a></li> 
+                        <li class="nav-item"><a class="nav-link" href="/dist/storecebececo/importar"><span class="nav-icon"></span> Reporte</a></li> 
+                </ul>
+        </li>
+
+       
+        <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
+                <svg class="nav-icon">
+                        <use xlink:href="{{ asset('../vendors/@coreui/icons/svg/free.svg#cil-industry') }}"></use>
+                </svg> Decision de Queja</a>
+                <ul class="nav-group-items">
+                        <li class="nav-item"><a class="nav-link" href="/dist/compania"><span class="nav-icon"></span> Decision de Queja</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/dist/storecebececo/importar"><span class="nav-icon"></span> Importar Datos</a></li> 
+                        <li class="nav-item"><a class="nav-link" href="/dist/storecebececo/importar"><span class="nav-icon"></span> Reporte</a></li> 
                 </ul>
         </li>
 
         <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
                 <svg class="nav-icon">
-                        <use xlink:href="{{ asset('../vendors/@coreui/icons/svg/free.svg#cil-comment-bubble') }}"></use>
-                </svg> Comentarios</a>
+                        <use xlink:href="{{ asset('../vendors/@coreui/icons/svg/free.svg#cil-industry') }}"></use>
+                </svg> Metrologia</a>
                 <ul class="nav-group-items">
-                        <li class="nav-item"><a class="nav-link" href="/dist/comentario"> Comentarios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/dist/compania"><span class="nav-icon"></span> Metrologia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/dist/storecebececo/importar"><span class="nav-icon"></span> Importar Datos</a></li> 
+                        <li class="nav-item"><a class="nav-link" href="/dist/storecebececo/importar"><span class="nav-icon"></span> Reporte</a></li> 
                 </ul>
         </li>
 
         <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
                 <svg class="nav-icon">
-                        <use xlink:href="{{ asset('../vendors/@coreui/icons/svg/free.svg#cil-cash') }}"></use>
-                </svg> Clasificacion</a>
+                        <use xlink:href="{{ asset('../vendors/@coreui/icons/svg/free.svg#cil-industry') }}"></use>
+                </svg> Conciliacion</a>
                 <ul class="nav-group-items">
-                        <li class="nav-item"><a class="nav-link" href="/dist/generales"><span class="nav-icon"></span> Generales</a></li>                        
-                        <!-- <li class="nav-item"><a class="nav-link" href="/dist/generales/importar"><span class="nav-icon"></span> Importar Generales</a></li> -->
-
-                        <li class="nav-item"><a class="nav-link" href="/dist/secundaria"><span class="nav-icon"></span> Secundaria</a></li>
-                        <!-- <li class="nav-item"><a class="nav-link" href="/dist/secundaria/importar"><span class="nav-icon"></span> Importar Secundaria</a></li> -->
-
-                        <li class="nav-item"><a class="nav-link" href="/dist/especifica"><span class="nav-icon"></span> Especifica</a></li>
-                        <!-- <li class="nav-item"><a class="nav-link" href="/dist/secundaria/importar"><span class="nav-icon"></span> Importar Secundaria</a></li> -->
-
-
-
-                        <!-- <li class="nav-item"><a class="nav-link" href="/dist/gastos"><span class="nav-icon"></span> Secundaria</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/dist/gastos/importar"><span class="nav-icon"></span> Importar Secundaria</a></li>
-
-                        <li class="nav-item"><a class="nav-link" href="/dist/gastoscuenta"><span class="nav-icon"></span> Gastos Cuenta</a></li> -->
-                        
+                        <li class="nav-item"><a class="nav-link" href="/dist/compania"><span class="nav-icon"></span> Conciliacion</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/dist/storecebececo/importar"><span class="nav-icon"></span> Importar Datos</a></li> 
+                        <li class="nav-item"><a class="nav-link" href="/dist/storecebececo/importar"><span class="nav-icon"></span> Reporte</a></li> 
                 </ul>
         </li>
-        
-        <!--     
+
         <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
                 <svg class="nav-icon">
-                        <use xlink:href="{{ asset('../vendors/@coreui/icons/svg/free.svg#cil-cash') }}"></use>
-                </svg> Asiento</a>
+                        <use xlink:href="{{ asset('../vendors/@coreui/icons/svg/free.svg#cil-industry') }}"></use>
+                </svg> Verificacion</a>
                 <ul class="nav-group-items">
-                        <li class="nav-item"><a class="nav-link" href="/dist/asiento"><span class="nav-icon"></span> Asiento</a></li>
-                        <li class="nav-item"><a class="nav-link" href="base/breadcrumb.html"><span class="nav-icon"></span> Grupo</a></li>
-                        <li class="nav-item"><a class="nav-link" href="base/cards.html"><span class="nav-icon"></span> Cuenta</a></li>
-                        <li class="nav-item"><a class="nav-link" href="base/carousel.html"><span class="nav-icon"></span> Subcuenta</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/dist/compania"><span class="nav-icon"></span> Verificacion</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/dist/storecebececo/importar"><span class="nav-icon"></span> Importar Datos</a></li> 
+                        <li class="nav-item"><a class="nav-link" href="/dist/storecebececo/importar"><span class="nav-icon"></span> Reporte</a></li> 
                 </ul>
-        </li> -->
+        </li>
+
+
+
         
         <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
                 <svg class="nav-icon">
                         <use xlink:href="{{ asset('../vendors/@coreui/icons/svg/free.svg#cil-industry') }}"></use>
-                </svg> Compania</a>
+                </svg> Permisos</a>
                 <ul class="nav-group-items">
                         <li class="nav-item"><a class="nav-link" href="/dist/compania"><span class="nav-icon"></span> Compania</a></li>
                 </ul>
